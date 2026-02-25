@@ -1,0 +1,43 @@
+:root {
+  --bg: #0b1020;
+  --card: #111831;
+  --text: #e9edff;
+  --muted: #b6c0e6;
+  --primary: #7c8bff;
+  --border: #273056;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: radial-gradient(1200px 500px at 10% -10%, #1d2858 0%, var(--bg) 60%);
+  color: var(--text);
+}
+.container { width: min(1100px, 92%); margin-inline: auto; }
+.nav { position: sticky; top: 0; backdrop-filter: blur(10px); background: #0b1020b3; border-bottom: 1px solid #202a51; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.logo { color: var(--text); text-decoration: none; font-weight: 800; font-size: 1.1rem; }
+.logo span { color: var(--primary); }
+nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-weight: 600; }
+.hero { padding: 80px 0 50px; }
+.tag { color: var(--primary); font-weight: 700; margin-bottom: 8px; }
+h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); }
+h1 span { color: #9aa8ff; }
+.lead { color: var(--muted); max-width: 650px; line-height: 1.7; font-size: 1.05rem; margin-top: 14px; }
+.actions { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 12px 18px; border-radius: 12px; text-decoration: none; color: var(--text); border: 1px solid var(--border); }
+.btn.primary { background: var(--primary); color: #0d1130; border-color: transparent; font-weight: 700; }
+.section { padding: 32px 0; }
+.section h2 { margin-bottom: 10px; }
+.section p { color: var(--muted); line-height: 1.7; }
+.chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.chips li { background: #131c3d; border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d8e0ff; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+.card h3 { margin-top: 0; }
+.card .meta { color: #9fb0ef; font-size: .9rem; margin-top: -4px; }
+.card a { color: #a7b4ff; text-decoration: none; }
+.timeline { display: grid; gap: 14px; }
+.contact { text-align: center; padding-bottom: 60px; }
+.contact a { color: #a7b4ff; }
+.footer { border-top: 1px solid #202a51; padding: 18px 0 30px; color: #8f9ac7; text-align: center; }
